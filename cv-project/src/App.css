@@ -1,42 +1,33 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* App.css */
+
+/* Ensures the body and html take up the full viewport height and width */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh; /* Takes full viewport height */
+  width: 100%; /* Takes full width of the browser */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-section, .right-section {
+  width: 50%; /* Each section takes up 50% of the container width */
+  padding: 20px; /* Adds some padding around the content */
+  box-sizing: border-box; /* Ensures padding is included in the width calculation */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adds space between components */
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

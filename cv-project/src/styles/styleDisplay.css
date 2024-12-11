@@ -1,0 +1,76 @@
+.displaySection {
+    width: 600px; 
+    margin: 30px auto; 
+    padding: 100px; 
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+.displaySection h2 {
+    text-align: left;
+    margin-bottom: 20px; 
+    font-size: 28px;
+    color: #333;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 10px;
+}
+
+.displaySection p {
+    font-size: 18px; 
+    line-height: 1.8; 
+    margin: 15px 0; 
+    color: #555;
+}
+
+.displaySection p strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.displaySection p span {
+    font-style: italic;
+    color: #666;
+}
+
+/* Styling for rows with labels and data */
+.displaySection .details-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.displaySection .details-row strong {
+    flex: 1;
+    text-align: left;
+    font-size: 20px;
+}
+
+.displaySection .details-row span {
+    flex: 2;
+    text-align: right;
+    font-size: 18px;
+    font-style: italic;
+    color: #444;
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .displaySection {
+        max-width: 90%; 
+        padding: 20px; 
+    }
+
+    .displaySection .details-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .displaySection .details-row span {
+        text-align: left;
+        margin-top: 5px; 
+    }
+}
