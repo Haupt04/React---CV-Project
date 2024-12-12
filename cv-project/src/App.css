@@ -10,20 +10,19 @@ html, body {
 .container {
   display: flex;
   justify-content: space-between;
-  height: 100vh; /* Takes full viewport height */
-  width: 100%; /* Takes full width of the browser */
+  height: 100vh; 
+  width: 100%; 
 }
 
 .left-section, .right-section {
-  width: 50%; /* Each section takes up 50% of the container width */
-  padding: 20px; /* Adds some padding around the content */
-  box-sizing: border-box; /* Ensures padding is included in the width calculation */
+  width: 50%; 
+  padding: 20px; 
+  box-sizing: border-box; 
 }
-
 .left-section {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Adds space between components */
+  gap: 20px; 
 }
 
 .right-section {
